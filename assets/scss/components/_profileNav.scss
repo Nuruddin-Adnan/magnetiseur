@@ -1,0 +1,128 @@
+.profile-nav{
+   background: #333359;
+   padding: 0 15px;
+   color: #fff;
+
+   @media(max-width: 767px){
+      background: #fff;
+      color: #000   }
+   
+   .title{
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+   }
+
+   .profile-img {
+      border: 2px solid #bfbfc3;
+      margin-inline: auto;
+   }
+
+   .section-head {
+      font-size: 15px;
+      font-weight: 600;
+   }
+
+   .btn-white {
+      font-weight: 700;
+      padding: 3px 5px;
+   }
+
+   .btn-white-rounded{
+      padding: 3px 5px;
+   }
+}
+
+.modal{
+   padding: 25px;
+   .modal-dialog{
+      width: 100%;
+      max-width: 850px;
+   }
+}
+
+// get-contact
+.get-contact{
+   .contact-form{
+      border: 1px solid #eeeeee;
+      padding: 10px;
+      max-width: 340px;
+      margin-top: 5px;
+      right: 15px;
+      top: 15px;
+      width: 100%;
+      max-width: 345px;
+   
+      .header-top{
+         background: #32314c;
+         color: #fff;
+         padding: 15px 5px;
+         margin-bottom: 10px;
+         font-size: 15px;
+      }
+   
+   
+      input{
+         &::placeholder{
+            font-size: 15px;
+            color: #999999;
+         }
+      }   
+   
+      .select-option{
+         display: block;
+         width: 100%;
+         padding: 0.45rem 0.75rem;
+         font-size: 1rem;
+         font-weight: 400;
+         line-height: 1.5;
+         color: #00000078;
+         border: 1px solid #ced4da;
+         border-radius: 0.25rem;
+         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      }
+
+
+      .g-recaptcha{
+         @media(min-width: 1200px){
+            transform:scale(0.62);
+            -webkit-transform:scale(0.62);
+            transform-origin:0 0;
+         }
+
+         @media(min-width: 1366px){
+            transform:scale(0.87);
+            -webkit-transform:scale(0.87);
+            transform-origin:0 0;
+         }
+
+         @media(min-width: 1400px){
+            transform:scale(0.84);
+            -webkit-transform:scale(0.84);
+            transform-origin:0 0;
+         }
+
+         @media(min-width: 1600px){
+            transform:scale(0.95);
+            -webkit-transform:scale(0.95);
+            transform-origin:0 0;
+         }
+
+         @media(min-width: 1700px){
+            transform:scale(1.0);
+            -webkit-transform:scale(1.0);
+            transform-origin:0 0;
+         }
+      }
+
+      .btn-red{
+         font-size: 15px;
+         @media(min-width: 1350px){
+            margin-top: 5px;
+         }
+
+         @media(min-width: 1600px){
+            margin-top: 10px;
+         }
+      }
+   }
+}

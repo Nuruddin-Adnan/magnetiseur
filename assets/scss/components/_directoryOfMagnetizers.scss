@@ -1,0 +1,32 @@
+.Directory-of-Magnetizers{
+
+   .section-heading{
+      padding: 18px 0;
+   }
+
+   ul{
+      li{
+         position: relative;
+         padding-left: 20px;
+         font-size: 15px;
+
+         
+         &::after{
+            content: "";
+            height: 15px;
+            width: 10px;
+            position: absolute;
+            left: 0;
+            top: 5px;
+            background: url(../images/locator.png) no-repeat center center/contain;
+         }
+      }
+   }
+
+   .magnetizers-epartment{
+      @media(max-width: 1199px){
+         height: 350px;
+         overflow: hidden;
+      }
+   }
+}

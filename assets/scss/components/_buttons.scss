@@ -1,0 +1,135 @@
+.btn {
+   &:focus {
+      box-shadow: none;
+      outline: none;
+   }
+}
+
+.button-primary{
+   background: #4abcf5;
+   color: #fff;
+   width: 100%;
+   max-width: 350px;
+   border-radius: 0;
+}
+
+.btnToggle{
+   background: #32314c;
+   color: #fff;
+   border-radius: 0;
+
+   &:hover{
+      color: #ff9902;
+   }  
+}
+
+.button-ash-black{
+   background: #32314c;
+   color: #fff;
+   border-radius: 0;
+
+   &:hover{
+      color: #ff9902;
+   }
+}
+
+.btn-yellow{
+   background: #ff9902;
+   color: #fff;
+   border-radius: 0;
+
+   &:hover{
+      color: rgb(0, 0, 0);
+   }
+}
+
+.btn-white{
+   background: #fff;
+   color: #000;
+   font-size: 15px;
+   width: 100%;
+   margin-bottom: 5px;
+   border-radius: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   @media(max-width: 767px){
+      background: #32314c;
+      color: #fff
+   }
+
+}
+
+.btn-white-rounded{
+   background: #fff;
+   color: #000;
+   font-size: 15px;
+   width: 100%;
+   margin-bottom: 5px;
+   border-radius: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 25px;
+
+   @media(max-width: 767px){
+      background: #fff;
+      color: #000;
+      border: 1px solid #000;
+   }
+}
+
+.btn-red{
+   background: $color-red;
+   color: #fff;
+   border-radius: 0;
+   font-size: 15px;
+   font-weight: 500;
+
+   &:hover{
+      color: #fff;
+      background: rgba($color-red, 0.8);
+   }
+  
+   
+   &.medium{
+      display: block;
+      width: 100%;
+      max-width: 280px;
+      padding: 12px 0;
+   }
+   
+   &.large{
+      display: block;
+      width: 100%;
+      max-width: 350px;
+      padding: 5px 0;
+   }
+}
+
+
+
+.btton-group{
+   display: flex;
+
+   .custom-button{
+      display: inline-block;
+      width: 100%;
+      font-size: 12px;
+      color: #fff;
+      margin: 0 5px 0 0;
+      border-radius: 20px;
+      @media (max-width: 575px) {
+         padding-inline: 2px;
+      }
+
+      &.black{
+         background: #000;
+      }
+
+      &.light-blue{
+         background: #605e9d;
+      }
+   }
+}
