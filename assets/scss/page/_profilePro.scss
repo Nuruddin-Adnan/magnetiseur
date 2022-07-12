@@ -1,0 +1,359 @@
+.Profile-pro-user-data{
+   .container{
+      max-width: 850px;
+      
+      // check and radio
+      input[type="radio"]:checked:before {
+         background: #22223B;
+      }
+
+      input[type="checkbox"]{
+         height: 15px;
+         width: 15px;
+         border-radius: 3px;
+         background: rgb(255, 255, 255);
+         border: 1px solid #ffffff;
+         outline: 1px solid rgba(208, 208, 208, 0.933);
+      }
+      
+      input[type="checkbox"]:before {
+         content: '';
+         border-radius: 3px;
+         display: block;
+         width: 100%;
+         height: 100%;
+         margin: auto;
+      }
+      
+      input[type="checkbox"]:checked:before {
+         background: #22223B;
+      }
+
+      .agreeDisagree{
+         input[type='radio'] {
+         -webkit-appearance: none;
+         display: block;
+         width: 15px;
+         height: 15px;
+         border-radius: 3px;
+         border: 1px solid #ffffff;
+         outline: 1px solid rgba(208, 208, 208, 0.933);
+        }
+         
+         input[type="radio"]:before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            border-radius: 3px;
+         }
+         
+         input[type="radio"]:checked:before {
+            background: #22223B;
+         }
+      }
+      // check and radio
+
+
+      .section-header{
+         padding-bottom: 30px;
+         
+         .section-heading{
+            font-weight: bold;
+            padding: 20px 0 15px;
+         }
+
+         .profile-pro-buttons{
+            p{
+               padding-top: 5px;
+            }
+            .publish{
+               .button-publish{
+                  background: #669900;
+                  color: #fff;
+                  padding: 10px 70px;
+                  font-size: 15px;
+               }
+
+               p{
+                  align-items: center;
+                  span{
+                     color: #669900;
+                  }
+               }
+            }
+
+            .view{
+               .button-view{
+                  background: #ff4f4f;
+                  color: #fff;
+                  padding: 10px 70px;
+                  font-size: 15px;
+               }
+
+               .sp-red{
+                  color: #ff4f4f;
+               }
+            }
+         }
+      }
+
+      .profile-data-inputs{
+
+         .accordion{
+            p{
+               font-size: 15px;
+            }
+            h5, h6, h4{
+               font-size: 15px;
+            }
+            
+            h2{
+               font-size: 20px;
+            }
+
+            ul{
+               li{
+                  &:not(:last-child){
+                     margin-right: 20px;
+                  }
+               }
+            }
+
+            label{
+               color: #000;
+               font-size: 15px;
+            }
+
+            .accordion-header{
+               .accordion-button{
+                  background: #22223b;
+                  border-radius: 0;
+                  color: #fff;
+                  cursor: pointer;
+
+                  &::after{
+                     display: none;
+                  }
+
+                  .progress{
+                     background: transparent;
+                  }
+               }
+            }
+
+            .btn-save{
+               background: #669900;
+               border-radius: 0;
+               color: #fff;
+               padding: 13px 100px;
+               font-size: 15px;
+
+               @media(max-width: 575px){
+                  padding: 13px 50px;
+               }
+            }
+            
+            .button-green{
+               background: #669900;
+               color: #fff;
+               border-radius: 0;
+               font-size: 15px;
+            }
+
+            .general-info{
+               padding: 0 45px 25px 45px;
+
+               .profile-pic{
+                  height: 140px;
+                  width: 140px;
+                  background: #22223b;
+                  border-radius: 50%;
+                  margin-top: 100px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-direction: column;
+                  cursor: pointer;
+
+                  p{
+                     color: #fff;
+                     font-size: 12px;
+                  }
+               }
+
+               .form-control{
+                  &:focus{
+                     box-shadow: none;
+                  }
+
+                  &::placeholder{
+                     color: #919191;
+                  }
+
+                  option{
+                     color: #919191;
+                  }
+               }
+
+               .coyntry-select{
+                  .inside{
+                     border: 0;
+                     .country-list{
+                        overflow: hidden;
+                     }
+                  }
+               }
+
+               #country_selectorA{
+                  height: 35px;
+                  width: 45px;
+                  padding: 0;
+                  border: 0;
+               }
+
+               .contact-info{
+                  h4{
+                     font-size: 15px;
+                     padding: 15px 0 25px;
+                  }
+               }
+            }
+
+            .upload-docs{
+               ul{
+                  li{
+                     margin-right: 0;
+                  }
+               }
+
+               .nav-tabs{
+                  background: #e8e8e8;
+                  border: 1px solid #d8d8d8;
+
+                  .nav-item{
+                     width: 50%;
+                     padding: 0;
+
+                     .nav-link{
+                        align-items: center;
+                        width: 100%;
+                        color: #000;
+                        border-radius: 0;
+                        font-size: 15px;
+                        font-weight: 400;
+
+                        &.active{
+                           background: #22223b;
+                           color: #fff;
+                           border-left: 1px solid #d8d8d8;
+                           border-right: 1px solid #d8d8d8;
+                        }
+                     }
+                  }
+               }
+
+               .tab-pane{
+                  background: #fbfbfb;
+                  border: 2px dashed #f2f2f2;
+                  border-top: none;
+                  text-align: center;
+
+                  h5{
+                     font-size: 15px;
+                     padding: 20px 0;
+                  }
+
+                  p{
+                     font-size: 15px;
+                     padding-bottom: 20px;
+                     color: #6d6d6d;
+                  }
+
+                  .upload-button{
+                     padding: 25px 60px;
+                     border: 1px dashed #dbdfe5;
+                     cursor: pointer;
+                  }
+                  
+                  .picture-field{
+                     justify-content: center;
+                     .item{
+                        height: 85px;
+                        width: 85px;
+                        border: 1px dashed #b0b3b6;
+                        margin: 5px;
+                     }
+                  }
+               }
+            }
+
+            .services{
+               h3{
+                  font-size: 20px;
+                  text-align: center;
+               }
+
+               td{
+                  padding: 5px 0;
+                  input{
+                     width: 80px;
+                     padding: 5px;
+                     text-align: center;
+                     border: 1px solid #e3e3e3;
+                  }
+               }
+
+            }
+
+            .experience{
+               @media(min-width: 768px){
+                  padding: 0 50px;
+               }
+
+               .select-year{
+                  padding: 10px;
+                  border: none;
+                  border-right: 10px solid #fff;
+                  outline: 1px solid #e6e6e6;
+                  border-radius: 3px;
+                  width: 150px;
+               }
+
+               .training-info{
+                  .item{
+                     border: 1px solid #c6c6cc;
+                     border-radius: 10px;
+                     padding: 10px 15px;
+                     margin-bottom: 10px;
+                  }
+
+                  .add-new-training{
+                     border: 1px solid #c6c6cc;
+                     border-radius: 3px;
+                     padding-inline: 15px;
+                     padding-bottom: 15px;
+                  }
+
+                  .custom-input{
+                     border: none;
+                     border-right: 10px solid #fff;
+                     outline: 1px solid #e2e2e2;
+                     height: 40px;
+                     border-radius: 5px;
+                     padding-inline: 15px;
+                     margin-top: 5px;
+                  }
+
+                  .button-ash-black{
+                     padding: 13px 45px;
+                     font-size: 15px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+// ended

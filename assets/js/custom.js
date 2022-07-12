@@ -36,7 +36,6 @@
 		listOne.classList.add("d-none")
 		btnToggleSmOne.innerHTML = "See More Search";
 	  }
-	  
 	});
 }
 

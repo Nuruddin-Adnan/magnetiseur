@@ -34,6 +34,18 @@
             padding-inline: 26px;
             font-weight: 600;
             
+            &.pro-profile{
+               padding-inline: 15px;
+
+               &::before{
+                  display: none;
+               }
+
+               @media(max-width: 1399px){
+                  padding-inline: 5px;
+               }
+            }
+            
             @media(max-width: 1399px){
                padding-inline: 19px;
             }

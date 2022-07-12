@@ -80,8 +80,12 @@
          p{
             font-size: 15px;
             color: #fff;
-            white-space: pre-line;
 
+            
+            
+            @media (min-width: 1600px){
+               white-space: pre-line;
+            }
             
             @media (max-width: 767px){
                font-size: 12px;
