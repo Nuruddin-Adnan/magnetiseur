@@ -74,6 +74,13 @@
                   color: #fff;
                   padding: 10px 70px;
                   font-size: 15px;
+                  @media(max-width: 991px){
+                     padding: 5px 50px;
+                  }
+
+                  @media(max-width: 767px){
+                     padding: 5px 20px;
+                  }
                }
 
                p{
@@ -90,6 +97,12 @@
                   color: #fff;
                   padding: 10px 70px;
                   font-size: 15px;
+                  @media(max-width: 991px){
+                     padding: 5px 50px;
+                  }
+                  @media(max-width: 767px){
+                     padding: 5px 23px;
+                  }
                }
 
                .sp-red{
@@ -164,24 +177,59 @@
 
             .general-info{
                padding: 0 45px 25px 45px;
+               @media(max-width: 767px) {
+                  padding: 0;
+               }
 
-               .profile-pic{
-                  height: 140px;
-                  width: 140px;
-                  background: #22223b;
-                  border-radius: 50%;
-                  margin-top: 100px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  flex-direction: column;
-                  cursor: pointer;
+               .ppSection{
+                  padding-top: 100px;
+                  @media(max-width: 767px) {
+                    display: flex;
+                    justify-content: center;
+                    padding: 15px;
+                  }
 
-                  p{
-                     color: #fff;
-                     font-size: 12px;
+                  .profile-pic{
+                     height: 140px;
+                     width: 140px;
+                     background: #22223b;
+                     border-radius: 50%;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     flex-direction: column;
+                     cursor: pointer;
+   
+                     p{
+                        color: #fff;
+                        font-size: 12px;
+                     }
                   }
                }
+
+               .country-inpt{
+                  border-radius: 5px;
+                  height: 36px;
+                  border: 1px solid #d4d4d4;
+                  border-left: 0;
+                  padding: 2px 0;
+
+                  .flag-dropdown{
+                     height: 36px;
+                     margin: auto;
+                     border: 1px solid #d4d4d4;
+                     border-radius: 5px;
+                     border-right: 0;
+                     margin-right: 5px;
+                  }
+
+                  input{
+                     border: 0;
+                     width: 100%;
+                     padding-left: 5px;
+                  }
+               }
+
 
                .form-control{
                   &:focus{
@@ -305,6 +353,12 @@
                   }
                }
 
+               @media(max-width: 575px){
+                  .respo-table{
+                     overflow-x: auto;
+                     -webkit-overflow-scrolling: touch;
+                  } 
+               }
             }
 
             .experience{
