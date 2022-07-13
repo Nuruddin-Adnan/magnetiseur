@@ -141,6 +141,7 @@
 
             .accordion-header{
                .accordion-button{
+                  padding: 13px 20px;
                   background: #22223b;
                   border-radius: 0;
                   color: #fff;
@@ -198,7 +199,10 @@
                      align-items: center;
                      justify-content: center;
                      flex-direction: column;
-                     cursor: pointer;
+                     
+                     label{
+                        cursor: pointer;
+                     }
    
                      p{
                         color: #fff;
@@ -405,6 +409,26 @@
                      font-size: 15px;
                   }
                }
+            }
+         }
+      }
+
+      .chart-parent{
+         height: 74px;
+         width: 74px;
+         overflow: hidden;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         .chartM{
+            position: relative;
+
+            span{
+               position: absolute;
+               top: 46%;
+               left: 50%;
+               transform: translate(-50%, -50%);
             }
          }
       }
