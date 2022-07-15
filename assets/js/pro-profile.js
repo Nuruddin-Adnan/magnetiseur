@@ -97,11 +97,43 @@ $("#country_selectorA").countrySelect({
 
 // ckeditor starts
 {
+   // ClassicEditor
+   //    .create(document.querySelector('#editor'), {
+   //       language: 'fr'
+   //    })
+   //    .catch(error => {
+   //       console.error(error);
+   //    });
+
    ClassicEditor
-   .create(document.querySelector('#editor'))
-   .catch(error => {
-      console.error(error);
-   });
+      .create(document.querySelector('#editor'), {
+         toolbar: [
+            'heading',
+            'bold',
+            'italic',
+            'link',
+            'bulletedList',
+            'numberedList',
+            'uploadImage',
+            'blockQuote',
+            'undo',
+            'redo'
+         ],
+         image: {
+            toolbar: [
+               'imageStyle:full',
+               'imageStyle:side',
+               '|',
+               'imageTextAlternative'
+            ]
+         }
+      })
+      .then(editor => {
+         console.log(editor);
+      })
+      .catch(error => {
+         console.error(error);
+      });
 }
 // ck editor ended
 
@@ -111,9 +143,9 @@ $("#country_selectorA").countrySelect({
    new EasyPieChart(element, {
       scaleColor: "transparent",
       barColor: '#41aeeb',
-      trackColor:	"#ffffff",
+      trackColor: "#ffffff",
       lineCap: "square",
-      lineWidth : "7",
+      lineWidth: "7",
       size: "80"
    })
 
@@ -121,8 +153,8 @@ $("#country_selectorA").countrySelect({
    new EasyPieChart(element, {
       scaleColor: "transparent",
       barColor: '#41aeeb',
-      trackColor:	"#ffffff",
-      lineWidth : "7",
+      trackColor: "#ffffff",
+      lineWidth: "7",
       lineCap: "square",
       size: "80"
    })
@@ -131,8 +163,8 @@ $("#country_selectorA").countrySelect({
    new EasyPieChart(element, {
       scaleColor: "transparent",
       barColor: '#41aeeb',
-      trackColor:	"#ffffff",
-      lineWidth : "7",
+      trackColor: "#ffffff",
+      lineWidth: "7",
       lineCap: "square",
       size: "80"
    })
@@ -141,8 +173,8 @@ $("#country_selectorA").countrySelect({
    new EasyPieChart(element, {
       scaleColor: "transparent",
       barColor: '#41aeeb',
-      trackColor:	"#ffffff",
-      lineWidth : "7",
+      trackColor: "#ffffff",
+      lineWidth: "7",
       lineCap: "square",
       size: "80"
    })
